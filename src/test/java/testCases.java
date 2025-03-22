@@ -14,9 +14,9 @@ public class testCases {
     @Test
     void loginSystem(){
         driver.manage().window().maximize();
-        driver.get("https://beta.rcms.gov.bd/login/");
-        driver.findElement(By.id("userId")).sendKeys("P********@rcms.gov.be");
-        driver.findElement(By.id("loginPass")).sendKeys("******");
+        driver.get("https://url");
+        driver.findElement(By.id("userId")).sendKeys("userid");
+        driver.findElement(By.id("loginPass")).sendKeys("password");
         driver.findElement(By.xpath("//*[@id=\"loginForm\"]/div[4]/button")).click();
         driver.findElement(By.xpath("//*[@id=\"designationForm\"]/div/div[2]/a")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div/ul/li[3]/a")).click();
